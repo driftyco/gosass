@@ -11,6 +11,8 @@ For sample usage, see the file `gosass.go`. But make sure you move it to a diffe
 
 To use in your Go programs, get the libsass code (including submodules) into a folder somewhere. Then run
 
+```bash
 CGO_CFLAGS="-I$PWD/lib/libsass" CGO_LDFLAGS="-L$PWD/lib/libsass" go run main.go (or whatever)
+```
 
 
