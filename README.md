@@ -1,7 +1,14 @@
 GoSass
 ======
 
-A fork of the official [gosass](https://github.com/moovweb/gosass) repo to fix cgo library and include paths for building.
+A fork of the official [gosass](https://github.com/moovweb/gosass) repo to fix cgo library and include paths for building. 
+
+### Building
+
+To use in your Go programs, get the libsass code (including submodules) into a folder somewhere. Then run
+
+CGO_CFLAGS="-I$PWD/lib/libsass" CGO_LDFLAGS="-L$PWD/lib/libsass" go run main.go (or whatever)
+
 
 Go language wrapper for LibSass (the C/C++ implementation of Sass).
 
