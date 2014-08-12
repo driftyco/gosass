@@ -1,8 +1,7 @@
 package gosass
 
 /*
-#cgo LDFLAGS: -L../../clibs/lib -lsass -lstdc++
-#cgo CFLAGS: -I../../clibs/include
+#cgo LDFLAGS: -lsass -lstdc++
 
 #include <stdlib.h>
 #include <sass_interface.h>
